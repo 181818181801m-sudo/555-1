@@ -1,0 +1,46 @@
+<div class="app-container">
+    <section id="home-page" class="page active">
+        <div class="header-ui">
+            <div class="user-info" onclick="navTo('profile-page')">
+                <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Umar" class="avatar">
+                <link rel="stylesheet" href="style.css">
+                <span>Umarov</span>
+            </div>
+            <button class="daily-btn" onclick="openDaily()">🎁 Daily</button>
+        </div>
+
+        <div class="score-container">
+            <h1 id="balance">0</h1>
+            <p>CLICKTON COINS</p>
+        </div>
+
+        <div class="tap-area">
+            <div id="coinBtn" class="coin-glow">
+                <img src="https://cryptologos.cc/logos/toncoin-ton-logo.png" alt="TON">
+            </div>
+        </div>
+    </section>
+
+    <section id="friends-page" class="page d-none">
+        <button class="back-link" onclick="navTo('home-page')">← Назад</button>
+        <h2>👥 Friends</h2>
+    </section>
+
+    <section id="top-page" class="page d-none">
+        <button class="back-link" onclick="navTo('home-page')">← Назад</button>
+        <h2>🏆 Leaderboard</h2>
+    </section>
+
+    <section id="boost-page" class="page d-none">
+        <button class="back-link" onclick="navTo('home-page')">← Назад</button>
+        <h2>🚀 Boosters</h2>
+    </section>
+
+    <section id="profile-page" class="page d-none">
+        <button class="back-link" onclick="navTo('home-page')">← Назад</button>
+        <div class="profile-card">
+            <img src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Umar" class="avatar-lg">
+            <h3>Umarov</h3>
+        </div>
+    </section>
+</div>
